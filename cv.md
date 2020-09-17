@@ -1,14 +1,14 @@
 Soft Skills
 
-1. Teamwork;
-2. Fast learner;
-3. Patience;
+Teamwork;
+Fast learner;
+Patience;
 
 Tech Skills
 
-1. HTML5
-2. CSS3
-3. JavaScript
+HTML5
+CSS3
+JavaScript
 
 Education
 
