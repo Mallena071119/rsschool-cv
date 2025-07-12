@@ -1,16 +1,146 @@
-html, body {
-    font-family: Arial, serif;
-    font-size: 16px;
+body {
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
-table {
-    border-collapse: collapse;
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
-table.border td, table.border th {
-    padding: 5px;
-    border: 1px solid #c0c0c0;
+
+.conainer {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
 }
-table.border th {
-    background: #e0e0e0;
+
+.name {
+    color: #cc8645;
+}
+
+h2 {
+    color: #cc8645;
+    line-height: 10px;
+}
+
+.email-phone1 {
+    line-height: 40px;
+}
+
+.email-phone2 {
+    line-height: 40px;
+    padding-top: 15px;
+}
+
+.my-contacts {
+    line-height: 5px;
+}
+
+.contacts {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.5px;
+    font-size: 17px;
+}
+
+.skills {
+    list-style-type: none;
+    padding-bottom: 0;
+    padding-left: 0;
+    font-size: 17px;
+}
+.skills li::before {
+    content: '\2605\0020';
+    padding: 0;
+}
+
+#english {
+    line-height: 1.5px;
+}
+
+.knowledge {
+    font-size: 17px;
+}
+
+.left {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    color: #FFFFFF;
+    padding: 30px 0px 0px 70px;
+    margin: auto;
+    float: left;
+    background-color: #051222;
+}
+
+.right {
+    display: block;
+    justify-content: center;
+    background-color: #dfe0e0;
+    padding-top: 15px;
+    padding-left: 35%;
+    padding-bottom: 35px;
+}
+
+.my-interests {
+    font-size: 17px;
+}
+
+.example-code {
+    padding: 0;
+}
+
+code {
+    font-size: 14px;
+}
+
+.my-link {
+    color: black;
+    font-size: 17px;
+}
+
+.education {
+    line-height: 20px;
+}
+
+span {
+    font-size: 17px;
+}
+
+footer {
+    background-color: #051222;
+    padding: 20px;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    align-items: center;
+    position: relative;
+}
+
+.year {
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    }
+
+.list-nav {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 10px;
+    padding-left: 0;
+    padding-bottom: 15px;
+    color: #FFFFFF;
+}
+
+.color-link {
+    color: #FFFFFF;
 }
