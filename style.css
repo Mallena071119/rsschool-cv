@@ -11,9 +11,7 @@ img {
 }
 
 .conainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    display: flex;
     margin: 0;
     padding: 0;
     justify-content: center;
