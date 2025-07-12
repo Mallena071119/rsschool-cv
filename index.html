@@ -1,7 +1,109 @@
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Заголовок</title>
-  </head>
-  <body>Страница</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="Homework for RS-School">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./Style1.css">
+<title>Resume</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+        <header>
+            <img src="./img/Star.jpg" alt="My-avatar" width="300" height="160">
+            <h1 class="name">Elena Malashkevich</h1>
+            <h3>Junior Front-End Developer</h3>
+            <br>
+            <h2 class="my-contacts">My Contacts</h2>
+            <ul class="contacts">
+                <li class="email-phone1"><b>Email</b></li>
+                <li>mallena071119@gmail.com</li>
+                <li class="email-phone2"><b>Phone</b></li>
+                <li>+79818316517</li>
+            </ul>
+            <section>
+                <br>
+                <h2><a id="skills">Skills</a></h2>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript Basic</li>
+                    <li>SQL Basic</li>
+                </ul>
+            </section>
+            <br>
+            <section class="english-knowledge">
+                <h2><a id="english">English Knowledge</a></h2>
+                <p class="knowledge">English B1</p>
+            </section>
+        </header>
+        </div>
+
+        <main>
+            <div class="right">
+                <section class="about-me">
+                    <h2><a id="about">About me</a></h2>
+                    <p class="my-interests">I enjoy creating beautiful and user-friendly interfaces that make user interaction with the product enjoyable and intuitive.
+                    <br>
+                    I value the opportunity to see immediate results of my work and constantly learn new technologies.</p>
+                </section>
+                <br>
+                <section class="example-code">
+                    <h2><a id="code">Example code</a></h2>
+                    <code>
+                        <p>const randomShuffle &equals; (arr) 	&equals;&gt; &lbrace;</p>
+                            <pre>   for (let i &equals; 0; i &lt; arr.length; i++) &lbrace;</pre>
+                            <pre>       let k &equals; Math.floor(Math.random() * (arr.length - 1 + 1));</pre>
+                            <pre>       arr.push(arr[k]);</pre>
+                                <pre>      arr.splice(k, 1);</pre>
+                                <pre>   &rbrace;</pre>
+                                <pre>   return arr;</pre>
+                                <pre>&rbrace;;</pre>
+                                <pre>const myArr &equals; [1, 2, 3, 4, 5];</pre>
+                                <pre>randomShuffle(myArr);</pre>
+                    </code>
+                </section>
+                <br>
+                <section class="projects">
+                    <h2><a id="projects">My projects</a></h2>
+                    <a href="https://mallena071119.github.io/rsschool-cv/" class="my-link">https://mallena071119.github.io/rsschool-cv/</a>
+                </section>
+                <br>
+                <section class="education">
+                    <h2><a id="education">Education</a></h2>
+                    <span><b>Bachelor of Science in the specialty Accounting, Analysis, and Audit</b></span>
+                    <br>
+                    <span>Peter the Great St. Petersburg Polytechnic University | Saint Petersburg</span>    
+                    <span>Graduated: 2016</span>
+                    <p>
+                    <span><b>Stepik</b></span> 
+                    <br>                   
+                    <span>Course: "Your JavaScript"</span>
+                    </p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+
+    <footer>
+        <div class="footer-img">
+            <p class="year">&copy;2025</p>
+            <p><a href="https://github.com/Mallena071119?tab=repositories"><img src="./img/new.jpg" alt="logo-github" width="50" height="50"></a></p>
+            <p><a href="https://rs.school/courses/javascript-ru"><img src="./img/file_00000000f2546243b406da9ba253657e.png" alt="Logo-course" width="100" height="100"></a></p>
+        </div>
+        <nav>
+            <ul class="list-nav">
+                <li><a href="#skills" class="color-link">Skills</a></li>
+                <li><a href="#english" class="color-link">English Knowledge</a></li>
+                <li><a href="#about" class="color-link">About me</a></li>
+                <li><a href="#code" class="color-link">Example code</a></li>
+                <li><a href="#projects" class="color-link">My projects</a></li>
+                <li><a href="#education" class="color-link">Education</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
 </html>
