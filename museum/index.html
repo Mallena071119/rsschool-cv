@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <title>Museum</title>
 </head>
 <body>
@@ -16,6 +17,11 @@
             </div>
             <div class="navigation1">
                 <nav>
+                    <!-- <div class="menu-hamburger">
+                        <div class="hamburger"></div>
+                        <div class="hamburger"></div>
+                        <div class="hamburger"></div>
+                    </div> -->
                     <ul class="page-navigation-header">
                         <li><a class="link" href="#Visiting">Visiting</a></li>
                         <li><a class="link" href="#Explore">Explore</a></li>
@@ -35,19 +41,38 @@
                     <h2 class="title-welcome">Welcome
                         <br> to the Louvre</h2>
                     <span class="welcome-text">From the castle to the museum</span>
-                    <form>
-                        <button class="discover-button">Discover the Louvre</button>
-                    </form>
+                    <p class="link_discover">
+                        <button class="discover-button"><a href="./tours/tour7.html" target="_blank">Discover the Louvre</a></button>
+                    </p>
                 </div>
-                <div class="background-image"></div>
-                <div class="pagination">
-                    <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
+                <div class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                        <li class="splide__slide monaLisa"></li>
+                        <li class="splide__slide revolusion"></li>
+                        <li class="splide__slide Lady"></li>
+                        <li class="splide__slide boat"></li>
+                        <li class="splide__slide globus"></li>
+                        </ul>
+                    </div>
+                    <div class="pagination">
+                        <div class="page-number"></div>
+                        <div class="controls">
+                            <span id="slide1"></span>
+                            <span id="slide2"></span>
+                            <span id="slide3"></span>
+                            <span id="slide4"></span>
+                            <span id="slide5"></span>
+                        </div>
+                        <div class="arrow">
+                            <span class="arrow-left"><svg class="arrow0" width="30" height="8" viewBox="0 0 30 8" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.72254 8C3.90173 6.31339 1.99422 5.08262 0 4.30769V3.69231C1.99422 2.89459 3.90173 1.66382 5.72254 0H7.23988C6.37283 1.4359 5.53468 2.52991 4.72543 3.28205H30V4.71795H4.72543C5.53468 5.47009 6.37283 6.5641 7.23988 8H5.72254Z"/>
+                            </svg></span>
+                            <span class="arrow-right"><svg class="arrow180" width="30" height="8" viewBox="0 0 30 8" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.72254 8C3.90173 6.31339 1.99422 5.08262 0 4.30769V3.69231C1.99422 2.89459 3.90173 1.66382 5.72254 0H7.23988C6.37283 1.4359 5.53468 2.52991 4.72543 3.28205H30V4.71795H4.72543C5.53468 5.47009 6.37283 6.5641 7.23988 8H5.72254Z"/>
+                            </svg></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -56,7 +81,7 @@
             <div class="container-visiting">
                 <h2 class="title-visiting">Virtual Tour</h2>
                 <div class="block-card">
-                    <a class="link-card" href="">
+                    <a class="link-card" href="./tours/tour1.html" target="_blank">
                     <div class="block-rp">
                         <img class="card-img" src="./img/cart/Rectangle.jpg" alt="Royal Palace" width="440" height="285">
                         <h3 class="card-title">Royal Palace</h3>
@@ -64,7 +89,7 @@
                         <p class="panorama">Google Street Panorama View</p>
                     </div>
                     </a>
-                    <a class="link-card" href="">
+                    <a class="link-card" href="./tours/tour2.html" target="_blank">
                     <div class="block-dw">
                         <img class="card-img" src="./img/cart/Rectangle1.jpg" alt="Denon Wing" width="440" height="285">
                         <h3 class="card-title">Denon Wing</h3>
@@ -72,7 +97,7 @@
                         <p class="panorama">Google Street Panorama View</p>
                     </div>
                     </a>
-                    <a class="link-card" href="">
+                    <a class="link-card" href="./tours/tour3.html" target="_blank">
                     <div class="block-cp">
                         <img class="card-img" src="./img/cart/Rectangle2.jpg" alt="Denon Wing" width="440" height="285">
                         <h3 class="card-title">Colonnade Perrault</h3>
@@ -80,7 +105,7 @@
                         <p class="panorama">Google Street Panorama View</p>
                     </div>
                     </a>
-                    <a class="link-card" href="">
+                    <a class="link-card" href="./tours/tour4.html" target="_blank">
                     <div class="block-gh">
                         <img class="card-img" src="./img/cart/Rectangle3.jpg" alt="Greek Hall" width="440" height="285">
                         <h3 class="card-title">Greek Hall</h3>
@@ -88,7 +113,7 @@
                         <p class="panorama">Google Street Panorama View</p>
                     </div>
                     </a>
-                    <a class="link-card" href="">
+                    <a class="link-card" href="./tours/tour5.html" target="_blank">
                     <div class="block-ml">
                         <img class="card-img" src="./img/cart/Rectangle4.jpg" alt="Mona Lisa" width="440" height="285">
                         <h3 class="card-title">Mona Lisa</h3>
@@ -96,7 +121,7 @@
                         <p class="panorama">Google Street Panorama View</p>
                     </div>
                     </a>
-                    <a class="link-card" href="">
+                    <a class="link-card" href="./tours/tour6.html" target="_blank">
                     <div class="block-np">
                         <img class="card-img" src="./img/cart/Rectangle5.jpg" alt="Night Palace" width="440" height="285">
                         <h3 class="card-title">Night Palace</h3>
@@ -117,7 +142,22 @@
                         <p class="text-explore">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
                     </div>
                 </div>
-                <img class="img-slider" src="./img/explore-slider/before.jpg" alt="slider-Mona-Lisa" width="720" height="700">
+                <div class="container-slider">
+                    <div class="image-slider">
+                        <img class="img-slider-before" src="./img/explore-slider/before.jpg" alt="Las Meninas di Diego Velázquez bright" width="720" height="700">
+                        <img class="img-slider-after" src="./img/explore-slider/after.jpg" alt="Las Meninas di Diego Velázquez" width="720" height="700">
+                    </div>
+                    <input type="range" min="0" max="100" value="50" class="slider" aria-label="Percentage before photo shown">
+                    <div class="slider-line"></div>
+                    <div class="slider-button" aria-hidden="true">
+                        <svg width="39" height="700" viewBox="0 0 39 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5 365C27.5081 365 34 358.508 34 350.5C34 342.492 27.5081 336 19.5 336C11.4919 336 5 342.492 5 350.5C5 358.508 11.4919 365 19.5 365ZM19.5 370C30.2696 370 39 361.27 39 350.5C39 339.73 30.2696 331 19.5 331C8.73045 331 0 339.73 0 350.5C0 361.27 8.73045 370 19.5 370Z" fill="white"/>
+                            <path d="M17 0H22V332H17V0Z" fill="white"/>
+                            <path d="M17 368H22V700H17V368Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+                
             </div>
         </section>
         <section class="section-video" id="Video">
@@ -127,20 +167,134 @@
             </div>
             <div class="main-video-louvre">
                 <div class="main-video-wrapper">
-                    <img class="main-video" src="./img/poster/video.jpg" alt="perimeter-louvre" width="1440" height="650">
-                    <input type="range" id="volume" name="volume" min="0" max="10">
-                    <label for="volume">Volume</label>
+                    <video id="myVideo0" onclick="togglePlay('myVideo0', this)" class="video-exposition" preload="metadata" width="1440" height="650" poster="./video/poster0.jpg">
+                        <source type="video/mp4" src="./video/video0.mp4" />
+                        <source type="video/webm" src="./video/video0.webm" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="play-button-video">
+                        <svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M110 8.89168C130.003 8.88778 149.558 14.816 166.191 25.9266C182.825 37.0372 195.79 52.831 203.446 71.3106C211.103 89.7901 213.107 110.125 209.206 129.744C205.304 149.363 195.672 167.384 181.528 181.528C167.384 195.672 149.363 205.304 129.744 209.206C110.125 213.107 89.7901 211.103 71.3106 203.446C52.8311 195.79 37.0372 182.825 25.9266 166.191C14.816 149.558 8.88783 130.003 8.89174 110C8.92833 83.1956 19.5925 57.4996 38.546 38.546C57.4996 19.5925 83.1956 8.92828 110 8.89168ZM110 0C88.2441 0 66.9767 6.45139 48.8873 18.5383C30.7979 30.6253 16.6989 47.805 8.37331 67.9048C0.0476618 88.0047 -2.1307 110.122 2.11367 131.46C6.35805 152.798 16.8345 172.398 32.2183 187.782C47.602 203.166 67.2022 213.642 88.5401 217.886C109.878 222.131 131.995 219.952 152.095 211.627C172.195 203.301 189.375 189.202 201.462 171.113C213.549 153.023 220 131.756 220 110C220 80.8262 208.411 52.8473 187.782 32.2183C167.153 11.5893 139.174 0 110 0Z" fill="white"/>
+                            <path d="M167.954 110L76.5278 49.9119C76.6463 140.498 76.5278 96.0498 76.5278 170.088L167.954 110Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="volume">
+                        <div class='video-hud__element video-hud__action video-hud__action_play' id='video-hud__action'>
+                            <svg width="23" height="31" viewBox="0 0 23 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23 15.5053L0 0C0 23.3683 0 11.8996 0 31L23 15.5053Z" fill="#B3B3B3"/>
+                            </svg>
+                        </div>
+                        <progress value='0' max='100' class='video-hud__element video-hud__progress-bar' id='video-hud__progress-bar'></progress>
+                        <div class='video-hud__element video-hud__mute video-hud__mute_false' id='video-hud__mute' onclick="toggleMute('myVideo0', this)">
+                            <svg id="muteIcon" width="38" height="31" viewBox="0 0 38 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_25_108)">
+                                <path d="M19.3511 0C18.875 0 18.4622 0.161587 18.1138 0.484761L8.9609 8.97374H1.76C1.28282 8.97374 0.871122 9.13533 0.522673 9.4585C0.174224 9.78167 0 10.1645 0 10.6061V20.3939C0 20.8355 0.174224 21.2183 0.522673 21.5415C0.871122 21.8647 1.28393 22.0263 1.76 22.0263H8.9609L18.1138 30.5152C18.4622 30.8384 18.8739 31 19.3511 31C19.8283 31 20.24 30.8384 20.5884 30.5152C20.9369 30.1921 21.1111 29.8102 21.1111 29.3677V1.63234C21.1111 1.1908 20.9369 0.807935 20.5895 0.484761C20.2422 0.161587 19.8294 0 19.3522 0H19.3511Z" fill="#B3B3B3"/>
+                                <path d="M29.5979 19.1322C30.3389 18.0151 30.7094 16.8082 30.7094 15.5103C30.7094 14.2125 30.3389 13.0014 29.5979 11.8751C28.8569 10.7487 27.8774 9.95512 26.6561 9.49425C26.4819 9.40952 26.2634 9.36612 26.0027 9.36612C25.5499 9.36612 25.1572 9.52422 24.8258 9.83939C24.4943 10.1566 24.3286 10.5431 24.3286 11.004C24.3286 11.3625 24.4331 11.6653 24.6432 11.9123C24.8532 12.1592 25.1044 12.3731 25.4011 12.5519C25.6966 12.7307 25.9932 12.927 26.2898 13.1409C26.5864 13.3548 26.8387 13.6565 27.0477 14.0492C27.2567 14.4419 27.3612 14.9286 27.3612 15.5083C27.3612 16.088 27.2567 16.5747 27.0477 16.9673C26.8387 17.36 26.5864 17.6628 26.2898 17.8756C25.9932 18.0885 25.6966 18.2859 25.4011 18.4646C25.1044 18.6434 24.8522 18.8573 24.6432 19.1043C24.4342 19.3512 24.3286 19.655 24.3286 20.0126C24.3286 20.4734 24.4954 20.8609 24.8258 21.1771C25.1572 21.4913 25.5488 21.6514 26.0027 21.6514C26.2634 21.6514 26.4819 21.6091 26.6561 21.5233C27.8763 21.0449 28.8569 20.2471 29.5979 19.1291V19.1322Z" fill="#B3B3B3"/>
+                                <path d="M35.7563 22.8582C37.252 20.6112 37.9999 18.1571 37.9999 15.499C37.9999 12.8419 37.252 10.3899 35.7563 8.13971C34.2605 5.89271 32.2811 4.25452 29.819 3.23039C29.591 3.14417 29.362 3.10001 29.1329 3.10001C28.6759 3.10001 28.2796 3.26509 27.9451 3.59525C27.6105 3.92541 27.4443 4.31551 27.4443 4.76764C27.4443 5.44479 27.7874 5.95685 28.4735 6.30489C29.4579 6.80855 30.1269 7.19023 30.4785 7.45099C31.7803 8.38891 32.7967 9.56445 33.5265 10.9797C34.2562 12.395 34.6216 13.9007 34.6216 15.5C34.6216 17.0972 34.2562 18.6039 33.5265 20.0203C32.7967 21.4356 31.7803 22.6111 30.4785 23.549C30.1269 23.8098 29.4579 24.1915 28.4735 24.6951C27.7874 25.0432 27.4443 25.5542 27.4443 26.2324C27.4443 26.6835 27.6116 27.0746 27.9451 27.4048C28.2785 27.7349 28.6833 27.9 29.1585 27.9C29.3694 27.9 29.59 27.8558 29.818 27.7696C32.28 26.7444 34.2605 25.1084 35.7552 22.8593L35.7563 22.8582Z" fill="#B3B3B3"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_25_108">
+                                <rect width="38" height="31" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <input type='range' value='100' max='100' title='loud' class='video-hud__element video-hud__volume' id='video-hud__volume' onchange="changeVolume('myVideo0', this.value)">
+                        <div class='video-hud__element video-fullscreen' id='video-fullscreen' onclick="toggleFullscreen('myVideo0')">
+                            <svg class="fullscreen-icon" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_1882)">
+                                    <path d="M30.6055 30.7513H22.4097V34.8638H34.7083V22.5069H30.6055V30.7513Z" fill="#B3B3B3"/>
+                                    <path d="M4.10278 22.5069H0V34.8638H12.2986V30.7513H4.10278V22.5069Z" fill="#B3B3B3"/>
+                                    <path d="M0 12.3569H4.10278V4.12222H12.2986V0H0V12.3569Z" fill="#B3B3B3"/>
+                                    <path d="M22.4097 0V4.12222H30.6055V12.3569H34.7083V0H22.4097Z" fill="#B3B3B3"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_1882">
+                                    <rect width="35" height="35" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                        </div>
+                    </div>
                 </div>
                 <div class="video-louvre">
                     <div class="poster-item">
-                        <img src="./img/poster/poster3.jpg" alt="exposition" width="452" height="254">
+                        <video id="myVideo1" onclick="togglePlay('myVideo1', this)" class="video-exposition" preload="metadata" width="452" height="254" poster="./video/poster3.jpg">
+                            <source type="video/mp4" src="./video/video3.mp4" />
+                            <source type="video/webm" src="./video/video3.webm" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-button-video" onclick="togglePlay('myVideo1', this)">
+                            <svg width="68" height="48" viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_1868)">
+                                    <path d="M66.599 7.51079C65.8151 4.57394 63.5184 2.25899 60.6058 1.46816C55.2845 0 33.9993 0 33.9993 0C33.9993 0 12.7147 0 7.39337 1.4122C4.53688 2.2025 2.18413 4.57447 1.40023 7.51079C0 12.875 0 24 0 24C0 24 0 35.1809 1.40023 40.4892C2.18465 43.4255 4.48085 45.741 7.39389 46.5318C12.7707 48 33.9999 48 33.9999 48C33.9999 48 55.2845 48 60.6058 46.5878C63.5189 45.7975 65.8151 43.482 66.5995 40.5457C67.9997 35.1809 67.9997 24.0565 67.9997 24.0565C67.9997 24.0565 68.0557 12.875 66.599 7.51079Z" fill="#212121" fill-opacity="0.8"/>
+                                    <path d="M27 34.4348L45 24L27 13.5652V34.4348Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_1868">
+                                        <rect width="68" height="48" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
                     </div>
                     <div class="poster-item">
-                        <img src="./img/poster/poster1.jpg" alt="La Venus" width="452" height="254">
+                        <video id="myVideo2" onclick="togglePlay('myVideo2', this)" class="video-exposition" preload="metadata" width="452" height="254" poster="./video/poster1.jpg">
+                            <source type="video/mp4" src="./video/video1.mp4" />
+                            <source type="video/webm" src="./video/video1.webm" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-button-video" onclick="togglePlay('myVideo2', this)">
+                            <svg width="68" height="48" viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_1868)">
+                                    <path d="M66.599 7.51079C65.8151 4.57394 63.5184 2.25899 60.6058 1.46816C55.2845 0 33.9993 0 33.9993 0C33.9993 0 12.7147 0 7.39337 1.4122C4.53688 2.2025 2.18413 4.57447 1.40023 7.51079C0 12.875 0 24 0 24C0 24 0 35.1809 1.40023 40.4892C2.18465 43.4255 4.48085 45.741 7.39389 46.5318C12.7707 48 33.9999 48 33.9999 48C33.9999 48 55.2845 48 60.6058 46.5878C63.5189 45.7975 65.8151 43.482 66.5995 40.5457C67.9997 35.1809 67.9997 24.0565 67.9997 24.0565C67.9997 24.0565 68.0557 12.875 66.599 7.51079Z" fill="#212121" fill-opacity="0.8"/>
+                                    <path d="M27 34.4348L45 24L27 13.5652V34.4348Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_1868">
+                                        <rect width="68" height="48" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="poster-item">   
-                        <img src="./img/poster/poster2.jpg" alt="Promenade" width="452" height="254">
+                    <div class="poster-item">
+                        <video id="myVideo3" onclick="togglePlay('myVideo3', this)" class="video-exposition" preload="metadata" width="452" height="254" poster="./video/poster2.jpg">
+                            <source type="video/mp4" src="./video/video2.mp4" />
+                            <source type="video/webm" src="./video/video2.webm" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-button-video" onclick="togglePlay('myVideo3', this)">
+                            <svg width="68" height="48" viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_1868)">
+                                    <path d="M66.599 7.51079C65.8151 4.57394 63.5184 2.25899 60.6058 1.46816C55.2845 0 33.9993 0 33.9993 0C33.9993 0 12.7147 0 7.39337 1.4122C4.53688 2.2025 2.18413 4.57447 1.40023 7.51079C0 12.875 0 24 0 24C0 24 0 35.1809 1.40023 40.4892C2.18465 43.4255 4.48085 45.741 7.39389 46.5318C12.7707 48 33.9999 48 33.9999 48C33.9999 48 55.2845 48 60.6058 46.5878C63.5189 45.7975 65.8151 43.482 66.5995 40.5457C67.9997 35.1809 67.9997 24.0565 67.9997 24.0565C67.9997 24.0565 68.0557 12.875 66.599 7.51079Z" fill="#212121" fill-opacity="0.8"/>
+                                    <path d="M27 34.4348L45 24L27 13.5652V34.4348Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_1868">
+                                        <rect width="68" height="48" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
                     </div>
+                </div>
+                <div class="pagination-video">
+                    <a href="#" class="arrow-pagination">
+                        <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.4777 0.219168C5.87773 0.564178 5.94259 1.19347 5.62256 1.62473L2.37578 6.00004L5.62256 10.3753C5.94259 10.8066 5.87773 11.4359 5.4777 11.7809C5.07766 12.1259 4.49394 12.056 4.17391 11.6247L0 6.00004L4.17391 0.375342C4.49394 -0.0559202 5.07766 -0.125842 5.4777 0.219168ZM9.65184 0.219168C10.0519 0.564178 10.1167 1.19347 9.7967 1.62473L6.54992 6.00004L9.7967 10.3753C10.1167 10.8066 10.0519 11.4359 9.65184 11.7809C9.2518 12.1259 8.66808 12.056 8.34805 11.6247L4.17414 6.00004L8.34805 0.375342C8.66808 -0.0559202 9.2518 -0.125842 9.65184 0.219168Z" fill="#999999"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="active"></a>
+                    <a href="#" class="active"></a>
+                    <a href="#" class="active"></a>
+                    <a href="#" class="active"></a>
+                    <a href="#" class="active"></a>
+                    <a href="#" class="arrow-pagination">
+                        <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.348163 0.219168C0.748196 -0.125842 1.33192 -0.0559202 1.65195 0.375342L5.82586 6.00004L1.65194 11.6247C1.33192 12.056 0.748195 12.1259 0.348162 11.7809C-0.0518709 11.4359 -0.116729 10.8066 0.203297 10.3753L3.45008 6.00004L0.203298 1.62473C-0.116728 1.19347 -0.05187 0.564177 0.348163 0.219168ZM4.5223 0.219168C4.92234 -0.125841 5.50606 -0.0559197 5.82609 0.375342L10 6.00004L5.82609 11.6247C5.50606 12.056 4.92234 12.1259 4.5223 11.7809C4.12227 11.4359 4.05741 10.8066 4.37744 10.3753L7.62422 6.00004L4.37744 1.62473C4.05741 1.19347 4.12227 0.564178 4.5223 0.219168Z" fill="#999999"/>
+                        </svg>
+                    </a>
                 </div>
            </div>
         </section>
@@ -150,18 +304,6 @@
                     <h2>Art Gallery</h2>
                 </div>
                 <div class="arts">
-                    <img src="./img/gallery/galery2.jpg" alt="Aphrodite" width="456" height="570">
-                    <img src="./img/gallery/galery9.jpg" alt="Venus" width="456" height="570">
-                    <img src="./img/gallery/galery4.jpg" alt="Nika" width="456" height="456">
-                    <img src="./img/gallery/galery6.jpg" alt="Madonna">
-                    <img src="./img/gallery/galery1.jpg" alt="Amur" width="456" height="456">
-                    <img src="./img/gallery/galery8.jpg" alt="Hall" width="456" height="570">
-                    <img src="./img/gallery/galery3.jpg" alt="Michelangelo" width="456" height="570">
-                    <img src="./img/gallery/galery5.jpg" alt="Venera">
-                    <img src="./img/gallery/galery7.jpg" alt="Mona Lisa" width="456" height="570">
-                    <img src="./img/gallery/galery10.jpg" alt="Palace" width="456" height="456">
-                    <img src="./img/gallery/galery15.jpg" alt="Louvre" width="456" height="456">
-                    <img src="./img/gallery/galery12.jpg" alt="Roden">
                 </div>
             </div>
         </section>
@@ -179,13 +321,13 @@
                     </p>
                     <form class="types-exhibitions">
                         <input id="yes" type="radio" name="exhibition">
-                        <label for="yes">Permanent exhibition</label>
+                        <label class="exhibitions-type" for="yes">Permanent exhibition</label>
                         <br>
                         <input id="no" type="radio" name="exhibition">
-                        <label for="no">Temporary exhibition</label>
+                        <label class="exhibitions-type" for="no">Temporary exhibition</label>
                         <br>
                         <input id="not" type="radio" name="exhibition">
-                        <label for="not">Combined exhibition</label>                        
+                        <label class="exhibitions-type" for="not">Combined exhibition</label>                        
                     </form>
                 </div>
                 <div class="amount-tickets">
@@ -195,23 +337,22 @@
                     <p class="title-basic-tickets">Basic 18+</p>
                     <form class="amount-tickets-button">
                         <button class="button-sign-minus" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                        <input type="number" min="0" max="10" value="1" readonly class="number">
+                        <input type="number" min="0" max="20" value="1" readonly class="number">
                         <button class="button-sign-plus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                     </form>
                     <p class="title-basic-tickets">Senior 65+</p>
                     <form class="amount-tickets-button">
                         <button class="button-sign-minus" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                        <input type="number" min="0" max="10" value="1" readonly class="number">
+                        <input type="number" min="0" max="20" value="1" readonly class="number">
                         <button class="button-sign-plus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                     </form>
                     <p class="total-price">
-                        Total &euro;220
+                        
                     </p>
-                    <form>
+                    <form href="./payment.html" target="_blank">
                         <button class="button-buy">Buy Now</button>
                     </form>
                 </div>
-
             </div>
             <div class="parallax-container"></div>
         </section>
@@ -225,13 +366,12 @@
                     <p class="name-museum">Musee du Louvre</p>
                     <div class="contacts">
                         <p>address: 75001 Paris, France</p>
-                        <p>phone: <a href="tel:+33(0)140205050">+33(0) 1 40 20 50 50</a></p>
-                        <p>mail: <a href="mailto:info@louvre.fr">info@louvre.fr</a></p>
+                        <p>phone: <a class="phone" href="tel:+33(0)140205050">+33(0) 1 40 20 50 50</a></p>
+                        <p>mail: <a class="mail" href="mailto:info@louvre.fr">info@louvre.fr</a></p>
                     </div>
                 </div>
-
                 <div class="map-louvre">
-                    <img src="./img/Map.png" alt="location-louvre" width="960" height="620">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10499.21257061949!2d2.3256429246079238!3d48.861964141319376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2z0JvRg9Cy0YA!5e0!3m2!1sru!2sru!4v1754048234030!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
@@ -257,21 +397,21 @@
                 </div>    
                 <div class="social-media">
                     <ul class="icon-social-media">
-                        <li class="icon-container"><svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li class="icon-container"><a href="https://www.youtube.com/user/louvre"><svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.03 11.38V4.62L14.97 8L9.03 11.38ZM22.23 2.5C22.1026 2.01772 21.8508 1.57733 21.4998 1.22285C21.1488 0.868375 20.711 0.612223 20.23 0.48C18.46 2.98023e-08 11.35 0 11.35 0C11.35 0 4.25 2.98023e-08 2.48 0.48C1.99901 0.612223 1.56115 0.868375 1.21018 1.22285C0.859213 1.57733 0.607431 2.01772 0.48 2.5C2.98023e-08 4.28 0 8 0 8C0 8 2.98023e-08 11.72 0.47 13.5C0.598299 13.9835 0.851586 14.4247 1.20441 14.7793C1.55723 15.1338 1.99717 15.3893 2.48 15.52C4.25 16 11.36 16 11.36 16C11.36 16 18.46 16 20.23 15.52C20.711 15.3878 21.1488 15.1316 21.4998 14.7771C21.8508 14.4227 22.1026 13.9823 22.23 13.5C22.71 11.72 22.71 8 22.71 8C22.71 8 22.71 4.28 22.24 2.5H22.23Z" fill="white" class="svg-item"/>
-                        </svg></li>
-                        <li class="icon-container"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        </svg></a></li>
+                        <li class="icon-container"><a href="https://www.instagram.com/museelouvre/"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.0202 0C12.8202 0 13.2002 0.0199999 14.1202 0.0599999C15.1802 0.11 15.9102 0.28 16.5402 0.53C17.2002 0.78 17.7602 1.13 18.3102 1.68C18.8702 2.23 19.2102 2.79 19.4702 3.45C19.7202 4.08 19.8802 4.81 19.9302 5.88C19.9802 6.83 19.9902 7.2 19.9902 9.2V10.8C19.9902 12.8 19.9802 13.17 19.9302 14.12C19.9144 14.9468 19.7589 15.7651 19.4702 16.54C19.2102 17.2 18.8702 17.76 18.3202 18.31C17.7602 18.87 17.2002 19.21 16.5402 19.47C15.9102 19.72 15.1802 19.88 14.1202 19.93C13.1702 19.98 12.7902 19.99 10.7902 19.99H9.20015C7.20015 19.99 6.83015 19.98 5.87015 19.93C5.04333 19.9141 4.22515 19.7586 3.45015 19.47C2.78376 19.2195 2.17981 18.8271 1.68015 18.32C1.16796 17.8186 0.771985 17.211 0.520153 16.54C0.231773 15.765 0.0762563 14.9468 0.0601533 14.12C0.0111304 13.0874 -0.00887746 12.0537 0.000153349 11.02V8.97C0.000153349 7.17 0.0201533 6.79 0.0601533 5.87C0.110153 4.81 0.280153 4.08 0.520153 3.45C0.780153 2.79 1.12015 2.23 1.68015 1.68C2.17533 1.16743 2.78059 0.774176 3.45015 0.53C4.22461 0.238206 5.04278 0.079305 5.87015 0.0599999C6.79015 0.0199999 7.17015 0 8.97015 0H11.0202ZM11.0402 1.8H8.95015C7.22015 1.8 6.85015 1.82 5.95015 1.86C4.98015 1.9 4.45015 2.06 4.10015 2.2C3.63015 2.38 3.30015 2.6 2.95015 2.95C2.60015 3.3 2.38015 3.63 2.20015 4.1C2.07015 4.45 1.90015 4.98 1.86015 5.96C1.82015 6.86 1.80015 7.22 1.80015 8.96V11.04C1.80015 12.78 1.82015 13.14 1.86015 14.04C1.90015 15.01 2.06015 15.54 2.20015 15.89C2.38015 16.36 2.60015 16.69 2.95015 17.04C3.30015 17.39 3.63015 17.61 4.10015 17.79C4.45015 17.93 4.98015 18.09 5.96015 18.13C6.93015 18.18 7.28015 18.19 9.44015 18.19H10.5502C12.7202 18.19 13.0602 18.18 14.0402 18.13C15.0102 18.09 15.5402 17.93 15.8902 17.79C16.3602 17.61 16.6902 17.39 17.0402 17.04C17.3902 16.69 17.6102 16.36 17.7902 15.89C17.9302 15.54 18.0902 15.01 18.1302 14.04C18.1802 13.06 18.1902 12.72 18.1902 10.55V9.45C18.1902 7.28 18.1802 6.93 18.1302 5.95C18.0902 4.98 17.9302 4.45 17.7902 4.1C17.6292 3.66543 17.373 3.27246 17.0402 2.95C16.7179 2.61692 16.3249 2.3606 15.8902 2.2C15.2971 1.98317 14.6716 1.86822 14.0402 1.86C13.0409 1.81227 12.0405 1.79226 11.0402 1.8ZM10.0002 4.86C11.362 4.86 12.6681 5.40101 13.6311 6.36401C14.5941 7.32701 15.1352 8.63311 15.1352 9.995C15.1352 11.3569 14.5941 12.663 13.6311 13.626C12.6681 14.589 11.362 15.13 10.0002 15.13C8.63827 15.13 7.33216 14.589 6.36916 13.626C5.40616 12.663 4.86515 11.3569 4.86515 9.995C4.86515 8.63311 5.40616 7.32701 6.36916 6.36401C7.33216 5.40101 8.63827 4.86 10.0002 4.86ZM10.0002 6.66C9.11566 6.66 8.26739 7.01136 7.64195 7.6368C7.01652 8.26223 6.66515 9.1105 6.66515 9.995C6.66515 10.8795 7.01652 11.7278 7.64195 12.3532C8.26739 12.9786 9.11566 13.33 10.0002 13.33C10.8847 13.33 11.7329 12.9786 12.3584 12.3532C12.9838 11.7278 13.3352 10.8795 13.3352 9.995C13.3352 9.1105 12.9838 8.26223 12.3584 7.6368C11.7329 7.01136 10.8847 6.66 10.0002 6.66ZM15.3302 3.46C15.6484 3.46 15.9536 3.58643 16.1787 3.81147C16.4037 4.03652 16.5302 4.34174 16.5302 4.66C16.5302 4.97826 16.4037 5.28348 16.1787 5.50853C15.9536 5.73357 15.6484 5.86 15.3302 5.86C15.0119 5.86 14.7067 5.73357 14.4816 5.50853C14.2566 5.28348 14.1302 4.97826 14.1302 4.66C14.1302 4.34174 14.2566 4.03652 14.4816 3.81147C14.7067 3.58643 15.0119 3.46 15.3302 3.46Z" fill="white" class="svg-item"/>
-                        </svg></li>
-                        <li class="icon-container"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        </svg></a></li>
+                        <li class="icon-container"><a href="https://www.facebook.com/museedulouvre"><svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3.78 20L3.75 11.25H0V7.5H3.75V5C3.75 1.63 5.84 0 8.85 0C10.29 0 11.53 0.1 11.89 0.15V3.68H9.8C8.17 3.68 7.85 4.46 7.85 5.6V7.5H12.5L11.25 11.25H7.85V20H3.78Z" fill="white" class="svg-item"/>
-                        </svg></li>
-                        <li class="icon-container"><svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        </svg></a></li>
+                        <li class="icon-container"><a href="http://twitter.com/museelouvre"><svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20 1.88C19.25 2.25 18.5 2.38 17.62 2.5C18.5 2 19.12 1.25 19.37 0.25C18.5606 0.731306 17.6743 1.06959 16.75 1.25C15.9485 0.46227 14.8737 0.0144601 13.75 0C11.62 0 9.75 1.88 9.75 4.13C9.75 4.5 9.75 4.75 9.88 5C8.24216 4.93823 6.63643 4.52707 5.17046 3.79408C3.70448 3.0611 2.41212 2.02321 1.38 0.75C1.00812 1.39563 0.834247 2.13634 0.88 2.88C0.891623 3.55196 1.06825 4.21077 1.39434 4.79842C1.72043 5.38608 2.18597 5.88456 2.75 6.25C2.12 6.25 1.5 6 0.87 5.75C0.87 7.75 2.25 9.38 4.12 9.75C3.75 9.88 3.37 9.88 3 9.88C2.75 9.88 2.5 9.88 2.25 9.75C2.75 11.38 4.25 12.63 6.13 12.63C4.67779 13.7963 2.8622 14.4156 1 14.38H0C1.87496 15.5591 4.03554 16.2056 6.25 16.25C13.75 16.25 17.88 10 17.88 4.62V4.12C18.7387 3.53355 19.4617 2.76969 20 1.88Z" fill="white" class="svg-item"/>
-                        </svg></li>
-                        <li class="icon-container"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        </svg></a></li>
+                        <li class="icon-container"><a href="https://www.pinterest.fr/museedulouvre/"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.0002 0C7.67571 0.00823729 5.42667 0.826025 3.63977 2.31277C1.85286 3.79952 0.63972 5.86234 0.208905 8.1466C-0.221909 10.4309 0.156518 12.7939 1.27913 14.8293C2.40174 16.8648 4.1984 18.4456 6.36023 19.3C6.26023 18.51 6.19023 17.3 6.39023 16.43L7.56023 11.46C7.56023 11.46 7.26023 10.86 7.26023 9.98C7.26023 8.59 8.07023 7.56 9.08023 7.56C9.93023 7.56 10.3502 8.2 10.3502 8.96C10.3502 9.82 9.80023 11.1 9.51023 12.29C9.27023 13.29 10.0102 14.1 11.0002 14.1C12.7802 14.1 14.1402 12.23 14.1402 9.53C14.1402 7.13 12.4202 5.47 9.96023 5.47C9.37582 5.44433 8.79227 5.53734 8.2448 5.74342C7.69733 5.94951 7.19729 6.26438 6.77487 6.66904C6.35245 7.07371 6.01641 7.55977 5.78702 8.09789C5.55763 8.63601 5.43966 9.21503 5.44023 9.8C5.44023 10.66 5.77023 11.58 6.18023 12.08C6.26023 12.18 6.27023 12.27 6.24023 12.37L5.96023 13.5C5.92023 13.68 5.81023 13.73 5.63023 13.64C4.37023 13.05 3.59023 11.24 3.59023 9.76C3.59023 6.61 5.89023 3.72 10.2102 3.72C13.6702 3.72 16.3802 6.18 16.3802 9.49C16.3802 12.94 14.2002 15.71 11.1802 15.71C10.1802 15.71 9.22023 15.18 8.90023 14.56L8.27023 16.93C7.97509 17.8577 7.55811 18.7421 7.03023 19.56C8.40406 19.9816 9.85261 20.1021 11.2772 19.9133C12.7018 19.7245 14.069 19.2309 15.2856 18.4661C16.5023 17.7014 17.5398 16.6833 18.3275 15.4814C19.1152 14.2795 19.6346 12.9219 19.8504 11.5011C20.0661 10.0804 19.9731 8.62979 19.5776 7.24822C19.1822 5.86664 18.4936 4.58652 17.5588 3.49506C16.6241 2.40359 15.465 1.52642 14.1607 0.923296C12.8563 0.320168 11.4373 0.00525257 10.0002 0Z" fill="white" class="svg-item"/>
-                        </svg></li>
+                        </svg></a></li>
                     </ul>
                 </div>
             </div>
@@ -282,5 +422,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="./app.js" defer></script>
+    <script src="./gallery.js" defer></script>
 </body>
 </html>
